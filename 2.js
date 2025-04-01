@@ -17,16 +17,16 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeElement = function (nums, val) {
-    let j = -1 // giu cac phan tu kh trung VAL
+    let j = 0 // giu cac phan tu kh trung VAL -> j đã sẵn sàng để gán phần tử hợp lệ đầu tiên
 
     for (let i = 0; i < nums.length; i++) {
         console.log('')
         console.log('---START---')
         console.log('i index: ', i)
         if (nums[i] !== val) {
-            j++
             console.log('j index: ', j)
             nums[j] = nums[i]
+            j++
         }
         console.log('nums for 1', nums)
         console.log('---END----')

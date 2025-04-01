@@ -15,12 +15,12 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 var removeDuplicates = function (nums) {
-    let j = 0 // phan tu kh trung lap
+    let j = 0 // phan tu kh trung lap -> j đã sẵn sàng để gán phần tử hợp lệ đầu tiên
 
     for (let i = 1; i < nums.length; i++) {
         if (nums[i] !== nums[j]) {
-            j++
             nums[j] = nums[i]
+            j++
         }
     }
 
